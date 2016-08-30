@@ -1,0 +1,19 @@
+package helper;
+
+public class SumSquareDifference {
+	
+	public static void main(String[] args) {
+	
+		long sumOfSquares = 0;
+		long squareOfSums = 0;
+		
+		for(int i = 1; i <= 100; i++) {
+			squareOfSums += i;
+			sumOfSquares = i*i;
+		}
+		squareOfSums *= squareOfSums;
+		
+		System.out.print(squareOfSums-squareOfSums);
+	}
+
+}

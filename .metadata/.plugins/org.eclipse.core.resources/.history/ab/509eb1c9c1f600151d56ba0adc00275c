@@ -1,0 +1,27 @@
+package helper;
+
+public class SmallestDiviser {
+
+	
+	public static void main(String[] args) {
+		long smallestNbr = 2520; 
+		long index = smallestNbr;
+		
+		while(smallestNbr == 2520) {
+			if(smallestDiviser(index, 1))
+				smallestNbr = index;
+			index++;
+		}
+	}
+	static boolean smallestDiviser(long nbr, int diviser) {
+		
+		if(nbr%diviser == 0) {
+			if(diviser == 20)
+				return true;
+			else
+				smallestDiviser(nbr, diviser+1);
+		}
+		return false;
+		
+	}
+}

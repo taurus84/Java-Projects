@@ -1,0 +1,38 @@
+package helper;
+
+public class Prime {
+
+	private static boolean isaPrime(long nbr) {
+		for(long j = nbr -1; j > 1; j--) {
+			if(nbr%j == 0) {
+				return false;
+			}
+		}
+		
+		return true;
+	}
+	public static void main(String[] args) {
+		long nbr = 600851475143L;
+		long j = nbr;
+//		int nbr = 13195;
+		long factor = 0;
+//		System.out.print(isaPrime(114));
+		boolean prime = true;
+		while(factor == 0) {
+			for(long i = j; i > 5; i--) {
+				if(j%i == 0) 
+					prime = false;
+			}
+			if(prime) {
+				if(nbr%j == 0) 
+					factor = j;
+			}
+			j--;
+		}
+		
+		
+		System.out.print(factor);
+		
+		
+	}
+}

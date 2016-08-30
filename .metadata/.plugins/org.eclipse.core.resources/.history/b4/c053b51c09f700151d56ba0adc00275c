@@ -1,0 +1,8 @@
+package helper;
+
+public class Test {
+
+	public static void main(String[] args) {
+		System.out.println(IsPrime.isPrime(90));
+	}
+}

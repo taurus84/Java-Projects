@@ -1,0 +1,19 @@
+package helper;
+
+public class Prime {
+
+	private static boolean isaPrime(long nbr) {
+		for(long i = nbr -1; i > 1; i--) {
+			if(nbr%i == 0) {
+				return false;
+			}
+		}
+		
+		return true;
+	}
+	public static void main(String[] args) {
+//		long nbr = 600851475143L;
+		System.out.print(isaPrime(113));
+		
+	}
+}
